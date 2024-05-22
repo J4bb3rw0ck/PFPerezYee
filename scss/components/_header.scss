@@ -1,0 +1,42 @@
+/* HEADER */
+header {
+  background-color: nth($list: $colores, $n: 1);
+  nav {
+    .cont-menu {
+      padding: 0px;
+      .img-menu {
+        width: 200px;
+        padding: 10px;
+        margin-left: 40px;
+      }
+      button {
+        padding-right: 40px;
+        .navbar-toggler-icon {
+          width: 2.5rem;
+          background-image: url(./../img/menu-icono.svg);
+        }
+      }
+      .menu {
+        flex-grow: 0;
+        .menu-ul {
+          text-align: center;
+          li {
+            a {
+              color: nth($list: $colores, $n: 2);
+              font-size: 2rem;
+              font-weight: 600;
+              margin-right: 32px;
+              width: 100%;
+              &:hover {
+                color: nth($list: $colores, $n: 3);
+              }
+            }
+            .active {
+              color: nth($list: $colores, $n: 3);
+            }
+          }
+        }
+      }
+    }
+  }
+}

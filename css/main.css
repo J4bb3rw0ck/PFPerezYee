@@ -1,0 +1,636 @@
+@charset "UTF-8";
+/* RESET */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* ESTILOS GENERALES */
+html {
+  font-size: 65%;
+}
+
+body {
+  font-family: "poppins", sans-serif;
+  font-style: normal;
+}
+
+h1 {
+  font-weight: 600;
+  text-align: center;
+  font-size: 2.5rem;
+  padding-top: 40px;
+}
+
+.main-franquicias .container .contenedor-franquicias .row .sizecard-font .card-solofranquicias .boton-info, .main-productos section .grilla-productos .card .card-body .boton-info, .main-nosotros .sobre-nosotros .texto-presentacion .link-contacto, .main-index .seccion-2 .seccion-contenido .inicio-presentacion div a {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  letter-spacing: 1px;
+  transition: 0.5s;
+  font-weight: 600;
+  padding: 10px 10px;
+  text-align: center;
+}
+
+.main-contacto .contactanos .form-contacto .formulario form div .boton-enviar, .main-contacto .contactanos .form-contacto .formulario form div textarea, .main-contacto .contactanos .form-contacto .formulario form div input {
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding: 10px;
+  width: 80%;
+  border: 1px solid #ffe100;
+  border-radius: 10px;
+}
+
+/* HEADER */
+header {
+  background-color: black;
+}
+header nav .cont-menu {
+  padding: 0px;
+}
+header nav .cont-menu .img-menu {
+  width: 200px;
+  padding: 10px;
+  margin-left: 40px;
+}
+header nav .cont-menu button {
+  padding-right: 40px;
+}
+header nav .cont-menu button .navbar-toggler-icon {
+  width: 2.5rem;
+  background-image: url(./../img/menu-icono.svg);
+}
+header nav .cont-menu .menu {
+  flex-grow: 0;
+}
+header nav .cont-menu .menu .menu-ul {
+  text-align: center;
+}
+header nav .cont-menu .menu .menu-ul li a {
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-right: 32px;
+  width: 100%;
+}
+header nav .cont-menu .menu .menu-ul li a:hover {
+  color: #ffe100;
+}
+header nav .cont-menu .menu .menu-ul li .active {
+  color: #ffe100;
+}
+
+/* MAIN INDEX */
+.main-index .inicio-carrusel {
+  position: relative;
+}
+.main-index .inicio-carrusel div .sobre-img {
+  font-weight: 600;
+  font-size: 5rem;
+  text-shadow: rgb(0, 0, 0) 1px 0 10px;
+  color: white;
+  position: absolute;
+  width: 100%;
+  height: 30vh;
+  z-index: 1;
+  text-align: center;
+  top: 30%;
+}
+.main-index .inicio-carrusel div div div .mi-width {
+  width: 100vw;
+  object-fit: cover;
+  height: 50vh;
+}
+.main-index .seccion-2 {
+  padding: 25px 40px;
+}
+.main-index .seccion-2 .seccion-contenido {
+  display: flex;
+  padding: 10px 0px;
+  column-gap: 3rem;
+}
+.main-index .seccion-2 .seccion-contenido div .img-inicio {
+  width: 50vw;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px #222;
+  margin: 20px 0px;
+}
+.main-index .seccion-2 .seccion-contenido .inicio-presentacion {
+  position: relative;
+}
+.main-index .seccion-2 .seccion-contenido .inicio-presentacion h2 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  padding-top: 20px;
+}
+.main-index .seccion-2 .seccion-contenido .inicio-presentacion h3 {
+  font-weight: 400;
+  font-size: 1.5rem;
+  padding-top: 25px;
+}
+.main-index .seccion-2 .seccion-contenido .inicio-presentacion div a {
+  position: absolute;
+  bottom: 20px;
+  z-index: 2;
+}
+.main-index .seccion-2 .seccion-contenido .inicio-presentacion div a:hover {
+  background-color: #ffe100;
+  border-color: #ffe100;
+  color: black;
+}
+
+/* MAIN NOSOTROS */
+.main-nosotros .sobre-nosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 25px 0;
+}
+.main-nosotros .sobre-nosotros div .img-nosotros {
+  width: 70%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.main-nosotros .sobre-nosotros div .img-nosotros div img {
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px #222;
+}
+.main-nosotros .sobre-nosotros .texto-presentacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+  row-gap: 25px;
+  margin-top: 10px;
+}
+.main-nosotros .sobre-nosotros .texto-presentacion h2 {
+  font-weight: 700;
+  font-size: 2rem;
+}
+.main-nosotros .sobre-nosotros .texto-presentacion h3 {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+.main-nosotros .sobre-nosotros .texto-presentacion p {
+  font-weight: 400;
+  font-size: 1.5rem;
+  padding-right: 20px;
+  text-align: justify;
+  margin-bottom: 0;
+}
+.main-nosotros .sobre-nosotros .texto-presentacion p span {
+  font-weight: 700;
+}
+.main-nosotros .sobre-nosotros .texto-presentacion .link-contacto {
+  font-size: 1.5rem;
+  width: 100%;
+}
+.main-nosotros .sobre-nosotros .texto-presentacion .link-contacto:hover {
+  background: #ffe100;
+  border-color: #ffe100;
+  color: black;
+}
+
+/* MAIN PRODUCTOS */
+.main-productos section .grilla-productos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+  padding: 2rem;
+}
+.main-productos section .grilla-productos .card {
+  box-shadow: 2px 5px 10px 0px #222;
+  justify-self: center;
+  width: 75%;
+  height: 100%;
+}
+.main-productos section .grilla-productos .card .card-body h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  width: 75%;
+}
+.main-productos section .grilla-productos .card .card-body p {
+  font-size: 1rem;
+  font-weight: 400;
+  width: 100%;
+}
+.main-productos section .grilla-productos .card .card-body .boton-info {
+  font-size: 1rem;
+  font-weight: 400;
+  border-radius: 5px;
+  border: none;
+}
+.main-productos section .grilla-productos .card .card-body .boton-info:hover {
+  background-color: #ffe100;
+  border-color: #ffe100;
+  color: black;
+}
+.main-productos .productos-temporada h2 {
+  font-weight: 500;
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 35px;
+}
+.main-productos .productos-temporada .slider-productos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 0;
+  margin-bottom: 45px;
+}
+.main-productos .productos-temporada .slider-productos .tamaño-slider {
+  width: 70%;
+  --swiffy-slider-item-count: 4;
+}
+.main-productos .productos-temporada .slider-productos .tamaño-slider .slider-container li .mi-card {
+  box-shadow: none;
+}
+.main-productos .productos-temporada .slider-productos .tamaño-slider .slider-nav {
+  visibility: visible;
+}
+
+/* MAIN FRANQUICIAS */
+.main-franquicias h3 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+.main-franquicias .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin: 0 auto;
+}
+.main-franquicias .container .contenedor-franquicias {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  box-shadow: none;
+  color: black;
+  padding: 35px 0;
+}
+.main-franquicias .container .contenedor-franquicias .row {
+  --bs-gutter-x: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+.main-franquicias .container .contenedor-franquicias .row .contenedor-img img {
+  box-shadow: 0px 0px 10px 0px #222;
+  border-radius: 10px;
+  width: 100%;
+  margin: auto;
+  display: block;
+}
+.main-franquicias .container .contenedor-franquicias .row .sizecard-font {
+  width: 250px;
+}
+.main-franquicias .container .contenedor-franquicias .row .sizecard-font .card-solofranquicias {
+  padding-top: 10px;
+}
+.main-franquicias .container .contenedor-franquicias .row .sizecard-font .card-solofranquicias h2 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.main-franquicias .container .contenedor-franquicias .row .sizecard-font .card-solofranquicias p {
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.main-franquicias .container .contenedor-franquicias .row .sizecard-font .card-solofranquicias .boton-info {
+  font-size: 0.9rem;
+  font-weight: 400;
+  border-radius: 5px;
+  border: none;
+}
+.main-franquicias .container .contenedor-franquicias .row .sizecard-font .card-solofranquicias .boton-info:hover {
+  background-color: #ffe100;
+  border-color: #ffe100;
+  color: black;
+}
+
+/* MAIN CONTACTO */
+.main-contacto .contactanos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 25px;
+  margin: 45px 0 65px;
+}
+.main-contacto .contactanos .maps iframe {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  width: 45vw;
+  height: 85vh;
+}
+.main-contacto .contactanos .form-contacto {
+  width: 40vw;
+}
+.main-contacto .contactanos .form-contacto .datos-contacto {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+}
+.main-contacto .contactanos .form-contacto .datos-contacto .alinear-elementos {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+}
+.main-contacto .contactanos .form-contacto .datos-contacto .alinear-elementos img {
+  height: 30px;
+}
+.main-contacto .contactanos .form-contacto .datos-contacto .alinear-elementos .rotar-icono {
+  transform: rotate(-65deg);
+}
+.main-contacto .contactanos .form-contacto .datos-contacto .alinear-elementos h3 {
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-left: 10px;
+  margin-bottom: 0;
+}
+.main-contacto .contactanos .form-contacto .formulario {
+  margin-top: 20px;
+}
+.main-contacto .contactanos .form-contacto .formulario div h2 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin: 5px 0 0 10px;
+}
+.main-contacto .contactanos .form-contacto .formulario form {
+  padding: 10px;
+  margin-top: 1px;
+}
+.main-contacto .contactanos .form-contacto .formulario form div input {
+  margin-bottom: 20px;
+}
+.main-contacto .contactanos .form-contacto .formulario form div textarea {
+  margin-bottom: 20px;
+}
+.main-contacto .contactanos .form-contacto .formulario form div .boton-enviar:hover {
+  background-color: #ffe100;
+  color: black;
+}
+
+/* FOOTER */
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding-bottom: 10px;
+}
+footer div {
+  padding: 30px;
+}
+footer div a img {
+  width: 60px;
+}
+footer .copyright {
+  font-size: 1.2rem;
+  font-weight: 200;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 10px;
+}
+footer .copyright span {
+  font-weight: 500;
+}
+
+/* MEDIA QUERY DESKTOP A TABLET */
+@media screen and (max-width: 1024px) {
+  /* Header */
+  header nav .cont-menu .img-menu {
+    width: 150px;
+    margin-left: 30px;
+  }
+  header nav .cont-menu .menu .menu-ul {
+    margin-right: 20px;
+  }
+  header nav .cont-menu .menu .menu-ul li a {
+    font-size: 1.5rem;
+    margin-right: 20px;
+  }
+  /* Main index */
+  .main-index .inicio-carrusel div .sobre-img {
+    font-size: 3.5rem;
+  }
+  .main-index .seccion-2 .seccion-contenido div .img-inicio {
+    width: 45vw;
+  }
+  .main-index .seccion-2 .seccion-contenido .inicio-presentacion div {
+    margin: 20px 0 15px 0;
+  }
+  .main-index .seccion-2 .seccion-contenido .inicio-presentacion div a {
+    position: static;
+  }
+  /* main productos */
+  .main-productos section .grilla-productos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 40px;
+  }
+  .main-productos section .grilla-productos .card {
+    width: 65%;
+  }
+  /* main franquicias */
+  .main-franquicias .container {
+    margin-bottom: 20px;
+  }
+  /* main contacto */
+  .main-contacto .contactanos .maps iframe {
+    width: 40vw;
+    height: 75vh;
+  }
+  .main-contacto .contactanos .form-contacto {
+    width: 40vw;
+  }
+  .main-contacto .contactanos .form-contacto .datos-contacto .alinear-elementos img {
+    height: 25px;
+  }
+  .main-contacto .contactanos .form-contacto .datos-contacto .alinear-elementos h3 {
+    font-size: 1.5rem;
+  }
+  .main-contacto .contactanos .form-contacto .formulario {
+    width: 100%;
+  }
+}
+/* MEDIA QUERY TABLET A MOBILE */
+@media screen and (max-width: 765px) {
+  /* Header */
+  header nav .cont-menu .menu {
+    width: 100vw;
+  }
+  header nav .cont-menu .menu .menu-ul li {
+    width: 100vw;
+  }
+  /* Main index */
+  .main-index .seccion-2 .seccion-contenido {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-index .seccion-2 .seccion-contenido div .img-inicio {
+    width: 55vw;
+  }
+  .main-index .seccion-2 .seccion-contenido .inicio-presentacion {
+    width: 55vw;
+  }
+  .main-index .seccion-2 .seccion-contenido .inicio-presentacion h2 {
+    text-align: center;
+  }
+  .main-index .seccion-2 .seccion-contenido .inicio-presentacion .margin-bottom {
+    margin-bottom: 25px;
+  }
+  .main-index .seccion-2 .seccion-contenido .inicio-presentacion div a {
+    position: static;
+  }
+  /* Main productos */
+  .main-productos section .grilla-productos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .main-productos section .grilla-productos .card {
+    width: 50%;
+  }
+  .main-productos .productos-desarrollo .slider-productos .tamaño-slider {
+    width: 40%;
+    --swiffy-slider-item-count: 1;
+  }
+  /* Main franquicias */
+  .main-franquicias h3 {
+    width: 60vw;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 1.5rem;
+  }
+  .main-franquicias .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .main-franquicias .container .contenedor-franquicias .row .contenedor-img img {
+    width: 50%;
+  }
+  .main-franquicias .container .contenedor-franquicias .row .sizecard-font {
+    width: 35vw;
+  }
+  /* Main contacto */
+  .main-contacto .contactanos {
+    flex-direction: column;
+  }
+  .main-contacto .contactanos .maps iframe {
+    width: 40vw;
+    height: 40vh;
+  }
+  .main-contacto .contactanos .form-contacto {
+    width: 40vw;
+  }
+  .main-contacto .contactanos .form-contacto .datos-contacto {
+    flex-direction: column;
+  }
+  .main-contacto .contactanos .form-contacto .datos-contacto .alinear-elementos h3 {
+    font-size: 1.5rem;
+  }
+  .main-contacto .contactanos .form-contacto .formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-contacto .contactanos .form-contacto .formulario form {
+    width: 55vw;
+  }
+  .main-contacto .contactanos .form-contacto .formulario form div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* Footer */
+  footer .copyright {
+    font-size: 1rem;
+  }
+}
+/* MEDIA QUERY MOBILE */
+@media screen and (max-width: 550px) {
+  /* Main index */
+  .main-index .inicio-carrusel div .sobre-img {
+    font-size: 2rem;
+  }
+  .main-index .seccion-2 .seccion-contenido div .img-inicio {
+    width: 80vw;
+  }
+  .main-index .seccion-2 .seccion-contenido .inicio-presentacion {
+    width: 70vw;
+  }
+  /* Main nosotros */
+  .main-nosotros .sobre-nosotros div .img-nosotros {
+    width: 80vw;
+  }
+  .main-nosotros .sobre-nosotros .texto-presentacion {
+    width: 80vw;
+  }
+  /* Main productos */
+  .main-productos section .grilla-productos .card {
+    width: 50vw;
+  }
+  .main-productos .productos-temporada h2 {
+    font-size: 2rem;
+  }
+  .main-productos .productos-temporada .slider-productos .tamaño-slider {
+    width: 100vw;
+  }
+  /* Main productos */
+  .main-franquicias .container .contenedor-franquicias .row .sizecard-font {
+    width: 50vw;
+  }
+  /* Main contacto */
+  .main-contacto .contactanos .maps iframe {
+    width: 60vw;
+  }
+  .main-contacto .contactanos .form-contacto {
+    width: 90vw;
+  }
+  .main-contacto .contactanos .form-contacto .datos-contacto {
+    width: 90vw;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .main-contacto .contactanos .form-contacto .datos-contacto .alinear-elementos {
+    flex-direction: column;
+    width: 215px;
+  }
+  .main-contacto .contactanos .form-contacto .formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-contacto .contactanos .form-contacto .formulario form {
+    width: 80vw;
+  }
+  .main-contacto .contactanos .form-contacto .formulario form div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Seo -->
+    <meta
+      name="description"
+      content="¿Preguntas o comentarios? ¡Contáctanos! Estamos aquí para ayudarte. Completa nuestro formulario en línea o contáctanos por correo electrónico o teléfono."
+    />
+    <meta
+      name="keywords"
+      content="Contacto Codertea, Servicio al cliente, información de contacto, formulario de contacto, Té de tapioca"
+    />
+    <meta name="author" content="Carlos Perez Yee" />
+    <title>Codertea | Contacto</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./../img/favicon.ico.png" />
+
+    <!-- Link css Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- Link css SASS -->
+    <link rel="stylesheet" href="./../css/main.css" />
+
+    <!-- Fuentes -->
+    <link rel="stylesheet" href="https://use.typekit.net/xyn1szl.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav class="navbar navbar-expand-md">
+        <div class="container-fluid cont-menu">
+          <!-- Logo Codertea -->
+          <img
+            class="img-menu"
+            src="./../img/codertea-logo.png"
+            alt="codertea-logo"
+          />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Menú de navegación -->
+          <div class="collapse navbar-collapse menu" id="navbarNav">
+            <ul class="navbar-nav menu-ul">
+              <li class="nav-item menu-item">
+                <a
+                  class="nav-link menu-link"
+                  aria-current="page"
+                  href="./../index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item menu-item">
+                <a class="nav-link" href="./nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item menu-item">
+                <a class="nav-link" href="./productos.html">Productos</a>
+              </li>
+              <li class="nav-item menu-item">
+                <a class="nav-link" href="./franquicias.html">Franquicias</a>
+              </li>
+              <li class="nav-item menu-item">
+                <a class="nav-link active" href="./contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <main class="main-contacto">
+      <h1>Contáctanos</h1>
+      <section class="contactanos">
+        <!-- Mapa de Google Maps -->
+        <div class="maps">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d4485.86109050695!2d-98.27036227519595!3d19.013352792999058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x85cfc78336eba0e5%3A0x989d5ed2d4713787!2sPlaza%20Atrium%2C%20Av%20Osa%20Menor%2C%2072820%20San%20Bernardino%20Tlaxcalancingo%2C%20Pue.!3m2!1d19.0144049!2d-98.26908159999999!5e0!3m2!1sen!2smx!4v1716198366756!5m2!1sen!2smx"
+            width="545"
+            height="620"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="form-contacto">
+          <!-- Datos de contacto -->
+          <div class="datos-contacto">
+            <div class="alinear-elementos">
+              <img src="./../img/contact-mail.svg" alt="icono-mail" />
+              <h3>contacto@codertea.com</h3>
+            </div>
+            <div class="alinear-elementos">
+              <img
+                src="./../img/contact-phone.svg"
+                alt="icono-tel"
+                class="rotar-icono"
+              />
+              <h3>+52 222 12345678</h3>
+            </div>
+            <div class="alinear-elementos">
+              <img src="./../img/contact-map-pin.svg" alt="icono-ubicacion" />
+              <h3>
+                Plaza Atrium, Av Osa Menor, 72820 San Bernardino Tlaxcalancingo,
+                Pue.
+              </h3>
+            </div>
+          </div>
+
+          <!-- Formulario de contacto -->
+          <div class="formulario">
+            <div>
+              <h2>Deja tus datos y un asesor se pondrá en contacto :</h2>
+            </div>
+            <form>
+              <div>
+                <input type="text" placeholder="Nombre Completo" required />
+              </div>
+              <div>
+                <input type="email" placeholder="Email" required />
+              </div>
+              <div>
+                <input type="number" placeholder="Teléfono" required />
+              </div>
+              <div>
+                <input type="text" placeholder="Motivo" required />
+              </div>
+              <div>
+                <textarea
+                  name=""
+                  id=""
+                  cols="30"
+                  rows="10"
+                  placeholder="Escriba su mensaje"
+                ></textarea>
+              </div>
+              <div>
+                <input class="boton-enviar" type="submit" value="Enviar" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <!-- Redes sociales -->
+      <div>
+        <a href="https://www.facebook.com/" target="_blank"
+          ><img src="./../img/fb.png" alt="Facebook"
+        /></a>
+        <a href="https://www.instagram.com/?hl=es-la" target="_blank"
+          ><img src="./../img/ig.png" alt="Instagram"
+        /></a>
+        <a
+          href="https://www.google.com/intl/es-419/gmail/about/"
+          target="_blank"
+          ><img src="./../img/mail.png" alt="Mail"
+        /></a>
+      </div>
+
+      <!-- Copyright -->
+      <h4 class="copyright">
+        © 2024 <span>Codertea</span>, todos los derechos reservados.
+      </h4>
+    </footer>
+
+    <!-- Script Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

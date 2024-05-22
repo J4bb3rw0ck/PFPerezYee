@@ -1,0 +1,61 @@
+/* MAIN FRANQUICIAS */
+.main-franquicias {
+  h3 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-top: 10px;
+  }
+  .container {
+    @include grid(repeat(2, 1fr), repeat(2, 1fr));
+    margin: 0 auto;
+    .contenedor-franquicias {
+      @include flex(column, center, center);
+      border: none;
+      box-shadow: none;
+      color: nth($list: $colores, $n: 1);
+      padding: 35px 0;
+      .row {
+        --bs-gutter-x: 1.5rem;
+        justify-content: center;
+        align-items: center;
+        .contenedor-img {
+          img {
+            box-shadow: 0px 0px 10px 0px #222;
+            border-radius: 10px;
+            width: 100%;
+            margin: auto;
+            display: block;
+          }
+        }
+        .sizecard-font {
+          width: 250px;
+          .card-solofranquicias {
+            padding-top: 10px;
+            h2 {
+              font-size: 3rem;
+              font-weight: 700;
+            }
+            p {
+              width: 100%;
+              font-size: 1.5rem;
+              font-weight: 400;
+            }
+            .boton-info {
+              @extend %estilos-botones;
+              font-size: 0.9rem;
+              font-weight: 400;
+              border-radius: 5px;
+              border: none;
+              &:hover {
+                background-color: nth($list: $colores, $n: 3);
+                border-color: nth($list: $colores, $n: 3);
+                color: nth($list: $colores, $n: 1);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

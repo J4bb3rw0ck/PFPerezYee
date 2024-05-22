@@ -1,0 +1,77 @@
+/* MAIN CONTACTO */
+.main-contacto {
+  .contactanos {
+    @include flex(row, center, center);
+    column-gap: 25px;
+    margin: 45px 0 65px;
+    .maps {
+      iframe {
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        width: 45vw;
+        height: 85vh;
+      }
+    }
+    .form-contacto {
+      width: 40vw;
+      .datos-contacto {
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        .alinear-elementos {
+          padding: 10px;
+          display: flex;
+          align-items: center;
+          margin-right: 5px;
+          img {
+            height: 30px;
+          }
+          .rotar-icono {
+            transform: rotate(-65deg);
+          }
+          h3 {
+            font-weight: 400;
+            font-size: 1.5rem;
+            margin-left: 10px;
+            margin-bottom: 0;
+          }
+        }
+      }
+      .formulario {
+        margin-top: 20px;
+        div {
+          h2 {
+            font-weight: 500;
+            font-size: 1.5rem;
+            margin: 5px 0 0 10px;
+          }
+        }
+        form {
+          padding: 10px;
+          margin-top: 1px;
+          div {
+            input {
+              @extend %estilo-formulario;
+              margin-bottom: 20px;
+            }
+          }
+          div {
+            textarea {
+              @extend %estilo-formulario;
+              margin-bottom: 20px;
+            }
+          }
+          div {
+            .boton-enviar {
+              @extend %estilo-formulario;
+              &:hover {
+                background-color: nth($list: $colores, $n: 3);
+                color: nth($list: $colores, $n: 1);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

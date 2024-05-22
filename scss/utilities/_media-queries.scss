@@ -1,0 +1,336 @@
+/* MEDIA QUERY DESKTOP A TABLET */
+@media screen and (max-width: 1024px) {
+  /* Header */
+  header {
+    nav {
+      .cont-menu {
+        .img-menu {
+          width: 150px;
+          margin-left: 30px;
+        }
+        .menu {
+          .menu-ul {
+            margin-right: 20px;
+            li {
+              a {
+                font-size: 1.5rem;
+                margin-right: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  /* Main index */
+  .main-index {
+    .inicio-carrusel {
+      div {
+        .sobre-img {
+          font-size: 3.5rem;
+        }
+      }
+    }
+    .seccion-2 {
+      .seccion-contenido {
+        div {
+          .img-inicio {
+            width: 45vw;
+          }
+        }
+        .inicio-presentacion {
+          div {
+            margin: 20px 0 15px 0;
+            a {
+              position: static;
+            }
+          }
+        }
+      }
+    }
+  }
+  /* main productos */
+  .main-productos {
+    section {
+      .grilla-productos {
+        @include grid(repeat(2, 1fr), repeat(2, 1fr));
+        row-gap: 40px;
+        .card {
+          width: 65%;
+        }
+      }
+    }
+  }
+  /* main franquicias */
+  .main-franquicias {
+    .container {
+      margin-bottom: 20px;
+    }
+  }
+  /* main contacto */
+  .main-contacto {
+    .contactanos {
+      .maps {
+        iframe {
+          width: 40vw;
+          height: 75vh;
+        }
+      }
+      .form-contacto {
+        width: 40vw;
+        .datos-contacto {
+          .alinear-elementos {
+            img {
+              height: 25px;
+            }
+            h3 {
+              font-size: 1.5rem;
+            }
+          }
+        }
+        .formulario {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+/* MEDIA QUERY TABLET A MOBILE */
+@media screen and (max-width: 765px) {
+  /* Header */
+  header {
+    nav {
+      .cont-menu {
+        .menu {
+          width: 100vw;
+          .menu-ul {
+            li {
+              width: 100vw;
+            }
+          }
+        }
+      }
+    }
+  }
+  /* Main index */
+  .main-index {
+    .seccion-2 {
+      .seccion-contenido {
+        flex-direction: column;
+        align-items: center;
+        div {
+          .img-inicio {
+            width: 55vw;
+          }
+        }
+        .inicio-presentacion {
+          width: 55vw;
+          h2 {
+            text-align: center;
+          }
+          .margin-bottom {
+            margin-bottom: 25px;
+          }
+          div {
+            a {
+              position: static;
+            }
+          }
+        }
+      }
+    }
+  }
+  /* Main productos */
+  .main-productos {
+    section {
+      .grilla-productos {
+        @include grid(1fr, repeat(4, 1fr));
+        .card {
+          width: 50%;
+        }
+      }
+    }
+    .productos-desarrollo {
+      .slider-productos {
+        .tamaño-slider {
+          width: 40%;
+          --swiffy-slider-item-count: 1;
+        }
+      }
+    }
+  }
+  /* Main franquicias */
+  .main-franquicias {
+    h3 {
+      width: 60vw;
+      margin: auto;
+      margin-top: 20px;
+      font-size: 1.5rem;
+    }
+    .container {
+      @include grid(1fr, repeat(4, 1fr));
+      .contenedor-franquicias {
+        .row {
+          .contenedor-img {
+            img {
+              width: 50%;
+            }
+          }
+          .sizecard-font {
+            width: 35vw;
+          }
+        }
+      }
+    }
+  }
+  /* Main contacto */
+  .main-contacto {
+    .contactanos {
+      flex-direction: column;
+      .maps {
+        iframe {
+          width: 40vw;
+          height: 40vh;
+        }
+      }
+      .form-contacto {
+        width: 40vw;
+        .datos-contacto {
+          flex-direction: column;
+          .alinear-elementos {
+            h3 {
+              font-size: 1.5rem;
+            }
+          }
+        }
+        .formulario {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          form {
+            width: 55vw;
+            div {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+            }
+          }
+        }
+      }
+    }
+  }
+  /* Footer */
+  footer {
+    .copyright {
+      font-size: 1rem;
+    }
+  }
+}
+
+/* MEDIA QUERY MOBILE */
+@media screen and (max-width: 550px) {
+  /* Main index */
+  .main-index {
+    .inicio-carrusel {
+      div {
+        .sobre-img {
+          font-size: 2rem;
+        }
+      }
+    }
+    .seccion-2 {
+      .seccion-contenido {
+        div {
+          .img-inicio {
+            width: 80vw;
+          }
+        }
+        .inicio-presentacion {
+          width: 70vw;
+        }
+      }
+    }
+  }
+  /* Main nosotros */
+  .main-nosotros {
+    .sobre-nosotros {
+      div {
+        .img-nosotros {
+          width: 80vw;
+        }
+      }
+      .texto-presentacion {
+        width: 80vw;
+      }
+    }
+  }
+  /* Main productos */
+  .main-productos {
+    section {
+      .grilla-productos {
+        .card {
+          width: 50vw;
+        }
+      }
+    }
+    .productos-temporada {
+      h2 {
+        font-size: 2rem;
+      }
+      .slider-productos {
+        .tamaño-slider {
+          width: 100vw;
+        }
+      }
+    }
+  }
+  /* Main productos */
+  .main-franquicias {
+    .container {
+      .contenedor-franquicias {
+        .row {
+          .sizecard-font {
+            width: 50vw;
+          }
+        }
+      }
+    }
+  }
+  /* Main contacto */
+  .main-contacto {
+    .contactanos {
+      .maps {
+        iframe {
+          width: 60vw;
+        }
+      }
+      .form-contacto {
+        width: 90vw;
+        .datos-contacto {
+          width: 90vw;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          .alinear-elementos {
+            flex-direction: column;
+            width: 215px;
+          }
+        }
+        .formulario {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          form {
+            width: 80vw;
+            div {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
